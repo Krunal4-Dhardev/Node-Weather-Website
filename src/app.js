@@ -6,7 +6,7 @@ const forcast=require('./utils/forcast')
 const request=require('postman-request')
 
 const app=express()
-
+const port=process.env.PORT|| 9000
 
 //Define Path for express config
 const viewpath=path.join(__dirname,"../templates/views")
@@ -101,7 +101,7 @@ app.get("*",(req,res)=>{
 })
 
 
-app.listen(9000, ()=>
+app.listen(port, ()=>
 {
-    console.log("Server Is up on port 9000")
+    console.log("Server Is up on port "+port )
 })

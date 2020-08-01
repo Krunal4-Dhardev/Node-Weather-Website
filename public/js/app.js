@@ -1,17 +1,4 @@
 
-// fetch('http://localhost:9000/weather?address=Rajkot').then((response)=>{
-//     response.json().then((data)=>
-//     {
-//         if(data.error)
-//         {
-//             console.log(data.error)
-//         }
-//         else{
-//             console.log(data.location)
-//             console.log(data.forcast)
-//         }
-//     })
-// })
 
 const weatherForm=document.querySelector('form')
 const search=document.querySelector('input')
@@ -27,7 +14,7 @@ weatherForm.addEventListener('submit',(e)=>{
     messageone.textContent='Loading..'
     messagetwo.textContent=''
 
-    fetch('http://localhost:9000/weather?address='+location).then((response)=>{
+    fetch('/weather?address='+location).then((response)=>{
     response.json().then((data)=>
     {
         console.log(data)
@@ -42,3 +29,23 @@ weatherForm.addEventListener('submit',(e)=>{
         })
     })
 })
+
+
+
+
+
+
+
+// fetch('http://localhost:9000/weather?address=Rajkot').then((response)=>{
+//     response.json().then((data)=>
+//     {
+//         if(data.error)
+//         {
+//             console.log(data.error)
+//         }
+//         else{
+//             console.log(data.location)
+//             console.log(data.forcast)
+//         }
+//     })
+// })
