@@ -1,4 +1,3 @@
-console.log("Client side javascript is lodeed ")
 
 // fetch('http://localhost:9000/weather?address=Rajkot').then((response)=>{
 //     response.json().then((data)=>
