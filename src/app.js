@@ -40,7 +40,8 @@ app.get("/help",(req,res)=>{
 app.get("/about",(req,res)=>{
     res.render("about",{
         name:"Krunal Dhardev",
-        info:"Web Developer"
+        info:"More Deatils ",
+        Contact:7227865028
     })
 })
 
