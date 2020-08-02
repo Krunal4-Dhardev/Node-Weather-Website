@@ -17,7 +17,7 @@ const forcast=(latitude,longitude,callback)=>{
         }
         else
         {
-            callback(undefined,body.current.weather_descriptions[0]+ ' IT is Currently  '+body.current.temperature+' degress out. it Feellike '+body.current.feelslike+'  Degrees ')
+            callback(undefined,body.current.weather_descriptions[0]+ ' IT is Currently  '+body.current.temperature+' degress out. It Feels like '+body.current.feelslike+'  Degress Out. The Humidity is '+body.current.humidity+' %.')
         }
 
     })
